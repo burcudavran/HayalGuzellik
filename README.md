@@ -16,17 +16,17 @@ Bu proje, **İleri Web Tasarımı** dersi kapsamında gerçek bir müşteri (Hay
 
 | Gereksinim | Durum |
 |---|---|
-| **Responsive tasarım** (mobil ≤768px, tablet 769–1024px, masaüstü ≥1025px) | ✅ |
-| **Semantik HTML5** (`header`, `nav`, `main`, `section`, `article`, `footer`) | ✅ |
-| **Flexbox ve Grid** (Float kullanılmamıştır) | ✅ |
-| **Lighthouse Performance ≥ 80** (mobil) | ✅ |
-| **Lighthouse Accessibility ≥ 90** | ✅ |
-| **Temel SEO** (title, meta description, heading hiyerarşisi, alt/a11y etiketleri) | ✅ |
-| **Çalışan iletişim formu** (Web3Forms) | ✅ |
-| **En az bir JS etkileşimi** (mobil menü, scroll reveal, tema değiştirme, form gönderimi) | ✅ |
-| **Görsel optimizasyonu** (SVG ikonlar, sıkıştırılmış PNG) | ✅ |
-| **HTTPS yayın** (SSL sertifikası ile) | ☐ (yayın platformuna bağlı) |
-| **Favicon** | ✅ |
+| **Responsive tasarım** (mobil ≤768px, tablet 769–1024px, masaüstü ≥1025px) 
+| **Semantik HTML5** (`header`, `nav`, `main`, `section`, `article`, `footer`)
+| **Flexbox ve Grid** (Float kullanılmamıştır)
+| **Lighthouse Performance ≥ 80** (mobil)
+| **Lighthouse Accessibility ≥ 90** 
+| **Temel SEO** (title, meta description, heading hiyerarşisi, alt/a11y etiketleri) 
+| **Çalışan iletişim formu** (Web3Forms)
+| **En az bir JS etkileşimi** (mobil menü, scroll reveal, tema değiştirme, form gönderimi)
+| **Görsel optimizasyonu** (SVG ikonlar, sıkıştırılmış PNG)
+| **HTTPS yayın** (SSL sertifikası ile)
+| **Favicon**
 
 ## Kullanılan Teknolojiler
 
@@ -63,13 +63,3 @@ hayalguzellik/
         ├── favicon.svg
         └── logo.svg
 ```
-hayalguzellik/
-├── index.html        # Ana HTML belgesi ve entegre SVG Sprite kütüphanesi
-├── README.md         # Detaylı proje teknik dökümantasyonu
-└── assets/
-    ├── css/
-    │   └── style.css # Tema değişkenleri, responsive Grid/Flexbox mimarisi
-    ├── js/
-    │   └── main.js   # Mobil menü, dark mode ve etkileşim kodları
-    ├── img/          # Optimize edilmiş yüksek performanslı .webp görselleri
-    └── icons/        # Logo ve Favicon varlıkları
