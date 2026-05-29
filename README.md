@@ -22,7 +22,7 @@ Bu proje, **İleri Web Tasarımı** dersi kapsamında gerçek bir müşteri (Hay
 | **Lighthouse Performance ≥ 80** (mobil) | ✅ |
 | **Lighthouse Accessibility ≥ 90** | ✅ |
 | **Temel SEO** (title, meta description, heading hiyerarşisi, alt/a11y etiketleri) | ✅ |
-| **Çalışan iletişim formu** (Web3Forms) | ✅ (access key girilmeli) |
+| **Çalışan iletişim formu** (Web3Forms) | ✅ |
 | **En az bir JS etkileşimi** (mobil menü, scroll reveal, tema değiştirme, form gönderimi) | ✅ |
 | **Görsel optimizasyonu** (SVG ikonlar, sıkıştırılmış PNG) | ✅ |
 | **HTTPS yayın** (SSL sertifikası ile) | ☐ (yayın platformuna bağlı) |
