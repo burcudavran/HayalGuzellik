@@ -10,13 +10,15 @@
   <meta name="robots" content="index, follow">
   <title>Hayal Güzellik | Professional Beauty &amp; Care</title>
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
-    rel="stylesheet" media="print" onload="this.onload=null;this.media='all'">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="alternate" href="index.html" hreflang="tr">
+  <!-- PERFORMANS: Google Maps ve iletişim formu API'sine önceden bağlan -->
+  <link rel="preconnect" href="https://maps.google.com">
+  <link rel="preconnect" href="https://api.web3forms.com">
+  <link rel="dns-prefetch" href="https://maps.google.com">
+  <link rel="dns-prefetch" href="https://api.web3forms.com">
+  <!-- PERFORMANS: Logo önceden yüklenir (ilk ekranda görünür) -->
+  <link rel="preload" href="assets/icons/logo.webp" as="image" type="image/webp">
 </head>
 
 <body>
@@ -26,7 +28,8 @@
   <header class="header">
     <div class="header__inner container">
       <a href="#" class="logo" aria-label="Hayal Güzellik Homepage">
-        <img src="assets/icons/logo.svg" alt="" class="logo__img" aria-hidden="true">
+        <!-- PERFORMANS: logo.svg 401KB'dı, WebP'ye dönüştürüldü (6KB) -->
+        <img src="assets/icons/logo.webp" alt="" class="logo__img" aria-hidden="true" width="200" height="200">
         <span class="logo__text">Hayal Güzellik</span>
       </a>
       <nav class="nav" aria-label="Main menu">
@@ -264,24 +267,27 @@
           <p class="section__desc">Snapshots from our applications and transformation stories of satisfied clients.</p>
         </div>
         <div class="gallery__grid">
+          <!-- PERFORMANS: width/height ve loading="lazy" sayfa yüklenirken
+               resimlerin yerini sabitler (CLS'yi önler) ve ekranda görünene kadar
+               yüklenmezler -->
           <figure class="gallery__item gallery__item--wide" tabindex="0">
-            <img class="gallery__img" src="assets/img/optimized/lazer.webp" alt="Laser epilation before and after">
+            <img class="gallery__img" src="assets/img/optimized/lazer.webp" alt="Laser epilation before and after" width="800" height="800" loading="lazy" decoding="async">
             <figcaption class="gallery__caption">Laser Epilation</figcaption>
           </figure>
           <figure class="gallery__item" tabindex="0">
-            <img class="gallery__img" src="assets/img/optimized/ciltbakimi.webp" alt="Skincare treatment">
+            <img class="gallery__img" src="assets/img/optimized/ciltbakimi.webp" alt="Skincare treatment" width="400" height="400" loading="lazy" decoding="async">
             <figcaption class="gallery__caption">Skincare</figcaption>
           </figure>
           <figure class="gallery__item" tabindex="0">
-            <img class="gallery__img" src="assets/img/optimized/ipek_kirpik.webp" alt="Silk eyelash application">
+            <img class="gallery__img" src="assets/img/optimized/ipek_kirpik.webp" alt="Silk eyelash application" width="400" height="400" loading="lazy" decoding="async">
             <figcaption class="gallery__caption">Silk Eyelash</figcaption>
           </figure>
           <figure class="gallery__item" tabindex="0">
-            <img class="gallery__img" src="assets/img/optimized/protez_tirnak.webp" alt="Acrylic nail design">
+            <img class="gallery__img" src="assets/img/optimized/protez_tirnak.webp" alt="Acrylic nail design" width="400" height="400" loading="lazy" decoding="async">
             <figcaption class="gallery__caption">Acrylic Nails</figcaption>
           </figure>
           <figure class="gallery__item" tabindex="0">
-            <img class="gallery__img" src="assets/img/optimized/kirpik_lifting.webp" alt="Lash lifting application">
+            <img class="gallery__img" src="assets/img/optimized/kirpik_lifting.webp" alt="Lash lifting application" width="400" height="400" loading="lazy" decoding="async">
             <figcaption class="gallery__caption">Lash Lifting</figcaption>
           </figure>
           <figure class="gallery__item" tabindex="0">

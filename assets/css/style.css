@@ -21,9 +21,9 @@
   --header-bg: rgba(255, 248, 240, 0.92);
   --gallery-overlay: rgba(45, 36, 36, 0.6);
   --error: #C0392B;
+  --font-heading: Georgia, serif;
 
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Cormorant Garamond', Georgia, serif;
+  --font-body: Georgia, serif;
 
   --max-width: 1200px;
   --header-height: 80px;
