@@ -91,6 +91,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
+  background: var(--bg-primary);
+  transition: background var(--transition-slow);
 }
 
 body {
@@ -104,6 +106,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 img {
@@ -293,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 10px;
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1.5px;
   line-height: 1;
@@ -1421,6 +1424,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav-toggle {
     display: flex;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo__img {
+    height: 56px;
   }
 
   .hero__title-main {
